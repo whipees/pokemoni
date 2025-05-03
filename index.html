@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémoni</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Vyhledávání Pokémonů</h1>
+
+    <h2>Vyber Pokémona ze seznamu</h2>
+    <select id="pokemonDropdown"></select>
+    <div class="pokemon-details" id="pokemonDetails"></div>
+  
+    <h2> Vyhledávání podle jména, výšky a váhy</h2>
+    <label>Jméno obsahuje: <input type="text" id="nameInput"></label><br>
+    <label>Min. výška: <input type="number" id="minHeight"></label><br>
+    <label>Min. váha: <input type="number" id="minWeight"></label><br>
+    <button onclick="searchPokemon()">Hledat</button>
+  
+    <div class="results-table" id="searchResults"></div>
+  
+
+    <script src="js/main.js"></script>
+</body>
+</html>
